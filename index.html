@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Navigation links go here -->
+        <nav class="sidebar">
+            <h1><i class="fa fa-gears"></i> Dashboard</h1>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-history"></i> History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tasks"></i> Tasks</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-users"></i> Communities</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Main content goes here -->
+        <div class="main-content">
+            <header>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...."/>
+                </div>
+                <div class="user-info">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge" id="notification-badge">0</span> <!-- Default count -->
+                    </div>
+                    <img src="https://res.cloudinary.com/teepublic/image/private/s--cKUopqgl--/t_Preview/b_rgb:191919,c_limit,f_auto,h_630,q_90,w_630/v1598986547/production/designs/13616080_0.jpg" 
+                     alt="profile-pic"/>
+                    <div class="name">SigmaBond01</div>
+                </div>
+            </header>
+
+            <section class="user-greeting">
+                <div class="user-info">
+                    <img src="https://res.cloudinary.com/teepublic/image/private/s--cKUopqgl--/t_Preview/b_rgb:191919,c_limit,f_auto,h_630,q_90,w_630/v1598986547/production/designs/13616080_0.jpg" 
+                     alt="profile-pic"/>
+                    <div class="greeting-text">
+                        <span>Sup,</span>
+                        <span class="name">SigmaBond01</span>
+                        <span>@SigmaBond01</span>
+                    </div>
+                </div>
+                <section class="user-buttons">
+                    <button class="new">New</button>
+                    <button class="upload">Upload</button>
+                    <button class="share">Share</button>
+                </section>
+            </section>
+
+            <!-- Dashboard cards-->
+            <div class="content-grid">
+                <section class="dashboard-cards">
+                    <h3>Your Projects</h3>
+                    <div class="projects">
+                        <div class="card">
+                            <h4>Simple Calculator</h4>
+                            <div class="description">Just a Simple Calculator</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Form</h4>
+                            <div class="description">Just a Simple Form</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Simple RPC Game</h4>
+                            <div class="description">Just a Simple Game of RPC</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Etch-A-Sketch</h4>
+                            <div class="description">Just a Simple Etch-A-Sketch</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Simple Calculator 2</h4>
+                            <div class="description">Just a Simple Calculator</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Simple Calculator 3</h4>
+                            <div class="description">Just a Simple Calculator</div>
+                            <div class="buttons">
+                                <button class="fa fa-star"></button>
+                                <button class="fa fa-eye"></button>
+                                <button class="fa fa-share"></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Announcements-->
+                <aside class="right-side">
+                    <div class="announcements">
+                        <h3>Announcements</h3>
+                        <ul>
+                            <li class="announcement">
+                                <h4>Community Share Day</h4>
+                                <p>Join us for Community Share Day on Friday, August 20th. Share your projects and get feedback from the community.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="trending">
+                        <h3>Trending</h3>
+                        <ul>
+                            <li class="trend">
+                                <img src="https://preview.redd.it/i-am-kagura-from-kagura-bachi-ama-v0-a49fe3jlbdqb1.jpg?auto=webp&s=b724cc13c6b412e8338bfc49021af4f92d5ee497" alt="User Profile Picture" />
+                                <div class="trend-info">
+                                    <h4><a href="https://instagram.com/sigmabond001" target="_blank">@sigmabond001</a></h4>
+                                    <p>Instagram Profile</p>
+                                </div>
+                            </li>
+                            <li class="trend">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/I_Am_Music_by_Playboi_Carti.jpg" alt="User Profile Picture" />
+                                <div class="trend-info">
+                                    <h4><a href="https://x.com/SigmaBond01" target="_blank">@SigmaBond01</a></h4>
+                                    <p>X (Twitter) Profile</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Example: Update notification count dynamically
+        document.getElementById("notification-badge").innerText = "5"; // Set this dynamically
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 SigmaBond01</p>
+    </footer>
+</body>
+</html>
